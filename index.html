@@ -8,14 +8,15 @@
 </head>
 <body>
 
-  <ul class="topnav">
+  <ul class="topnav" id="menu">
     <li><a class="active" href="#home"><i style="color: #29C08E" class="fa fa-trademark"></i>&nbsp; MOREGAGE</a></li>
-    <li class="right"><a href="#user"><i style="color: #269fad" class="fa fa-user-circle"></i></a></li>
-    <li class="right"><a href="#help">Help</a></li>
-    <li class="right"><a href="#blog">Blog</a></li>
-    <li class="right"><a href="#messages">Messages</a></li>
-    <li class="right"><a href="#activity">Activity</a></li>
-    <li class="right"><a href="#application">Application</a></li>
+    <li class="right"><a href="javascript:void(0);" style="font-size:15px;" class="burger" onclick="toggleBurgerIcon()">&#9776;</a></li>
+    <li class="right menu-item"><a href="#user"><i style="color: #269fad" class="fa fa-user-circle"></i></a></li>
+    <li class="right menu-item"><a href="#help">Help</a></li>
+    <li class="right menu-item"><a href="#blog">Blog</a></li>
+    <li class="right menu-item"><a href="#messages">Messages</a></li>
+    <li class="right menu-item"><a href="#activity">Activity</a></li>
+    <li class="right menu-item"><a href="#application">Application</a></li>
   </ul>
 
   <div class="footer">
@@ -26,6 +27,17 @@
       <p><a href="#faq">FAQ</a></p>
     </div>
   </div>
+
+<script>
+function toggleBurgerIcon() {
+    var x = document.getElementById("menu");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
   
 </body>
 </html>
