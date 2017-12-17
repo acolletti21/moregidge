@@ -12,7 +12,7 @@
 
   <ul class="topnav" id="menu">
     <li><a class="active" href="#home"><i style="color: #29C08E" class="fa fa-trademark"></i>&nbsp; MOREGAGE</a></li>
-    
+
     <li class="right"><a href="javascript:void(0);" style="font-size:15px;" class="burger" onclick="toggleBurgerIcon()">&#9776;</a></li>
     <li class="right menu-item"><a href="#user"><i style="color: #269fad" class="fa fa-user-circle"></i></a></li>
     <li class="right menu-item"><a href="#help">Help</a></li>
@@ -27,9 +27,9 @@
 <div class="left-panel">
   <div class="center">
     <ul>
-      <li><a href="#"></a>Edit Profile</li>
-      <li><a href="#"></a>Account</li>
-      <li><a href="#"></a>Security</li>
+      <li><a href="#">Edit Profile</a></li>
+      <li><a href="#" class="active">Account</a></li>
+      <li><a href="#">Security</a></li>
     </ul>
     <div>
       <button class="white-button">View Profile</button>
@@ -93,16 +93,16 @@
 
   <div class="clear note checkboxes">
     <div>
-      <input type="checkbox" checked="checked">
-      <label>Email</label>
+      <input id="emaillist" type="checkbox">
+      <label for="emaillist" >Email</label>
     </div>
     <div>
-      <input type="checkbox" checked="checked">
-      <label>Text Message</label>
+      <input id="textmsg" type="checkbox" checked="checked">
+      <label for="textmsg">Text Message</label>
     </div>
     <div>
-      <input type="checkbox" checked="checked">
-      <label>Phone Calls</label>
+      <input id="calls" type="checkbox" checked="checked">
+      <label for="calls">Phone Calls</label>
     </div>
   </div>
   <div class="clear" style="float: right; margin-right: 15%">

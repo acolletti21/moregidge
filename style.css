@@ -10,41 +10,80 @@ body {
 .center {
     margin: auto;
     width: 50%;
-    border: 3px solid green;
+    /*border: 3px solid green;*/
 }
 
 .clear{
     clear: both;
 }
 
-/*.check-hide input {
-    position: absolute;
-    opacity: 0;
-}*/
-
-.checkboxes label {
-    display: block;
-    float: left;
-    margin: 5px;
-}
-
 .checkboxes input {
     float: left;
     width: 20px;
-    margin: 5px;
+    margin: 1px;
     height: 15px;
-    border-color: #ddd;
-    background-color: #fff;
+    line-height: 10px;
+    opacity: 0;
 }
 
-/*.custom-check {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: green;
+/*.checkboxes input[type="checkbox"] {
+    opacity: 0;
+    float: left;
 }*/
+
+.checkboxes label {
+    position: relative;
+    display: inline-block;
+    float: left;
+    font-weight: bold;
+    padding-left: 14px;
+}
+
+.checkboxes label::before,
+.checkboxes label::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+}
+
+.checkboxes label::before {
+    /*content: "";*/
+    /*display: inline-block;*/
+    height: 11px;
+    width: 11px;
+    border: 1px solid #29C08E;  
+    border-radius: 2px;
+    left: -18px;
+    top: 2px;
+    /*margin-right: 8px;*/
+}
+
+.checkboxes label::after {
+    /*content: "";*/
+    /*display: inline-block;*/
+    height: 3px;
+    width: 6px;
+    border-left: 1px solid #29C08E;
+    border-bottom: 1px solid #29C08E;
+    transform: rotate(-45deg);
+    left: -15px;
+    top: 5px;
+}
+
+/*Hide the checkmark by default*/
+.checkboxes input[type="checkbox"] + label::after {
+    content: none;
+        }
+/*Unhide the checkmark on the checked state*/
+.checkboxes input[type="checkbox"]:checked + label::after {
+    content: "";
+}
+
+
+
+h3 {
+    color: #555;
+}
 
 input {
     width: 50%;
@@ -55,12 +94,21 @@ input {
     border: 1px solid #ddd;
 }
 
+label {
+    color: #666;
+}
+
 .note {
     width: 50%;
     float: right;
     clear: both;
     margin-right: 15%;
     font-size: 12px;
+    color: #555;
+}
+
+p {
+    font-color: #555;
 }
 
 select {
@@ -136,11 +184,23 @@ div.footer p a, span {
     /*border: 1px solid red;*/
 }
 
+.left-panel ul li a.active {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.left-panel li a:not(.active) {
+    color: #555;
+    text-decoration: none;
+}
+
 .left-panel ul {
     list-style-type: none;
     line-height: 30px;
     padding-top: 15px;
     padding-left: 0px;
+    color: red;
 }
 
 .white-button {
