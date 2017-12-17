@@ -26,11 +26,6 @@ body {
     opacity: 0;
 }
 
-/*.checkboxes input[type="checkbox"] {
-    opacity: 0;
-    float: left;
-}*/
-
 .checkboxes label {
     position: relative;
     display: inline-block;
@@ -86,7 +81,7 @@ h3 {
 }
 
 input {
-    width: 50%;
+    width: 60%;
     float: right;
     clear: both;
     margin-right: 15%;
@@ -96,10 +91,11 @@ input {
 
 label {
     color: #666;
+    font-size: 12px;
 }
 
 .note {
-    width: 50%;
+    width: 60%;
     float: right;
     clear: both;
     margin-right: 15%;
@@ -124,7 +120,7 @@ select {
 }
 
 select.minimal {
-    width: 50%;
+    width: 60%;
     background-color: #fff;
     background-image:
         linear-gradient(45deg, transparent 50%, gray 50%),
@@ -238,7 +234,7 @@ div.footer p a, span {
 .main-panel {
     width: 72%;
     float: left;
-    padding: 10px 50px;
+    padding: 10px 100px 20px 70px;
     /*border: 1px solid red;*/
     overflow: scroll;
     border-left-style: solid;
